@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+        .text{
+            text-align: center;
+            color: white;
+        }
+        .alt-text{
+            text-align: center;
+            color: black;
+        }
+        #navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            position: sticky;
+            top: 0;
+            background-color: rgb(252, 253, 253);
+            z-index: 1000;  
+        }
+        .logo{
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2rem;
+            color: black;
+        }
+        .nav-links{
+            display: flex;
+            gap: 50px;
+            list-style: none;
+        }
+        .nav-links a{
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: transform 0.3s ease, color 0.3s ease;
+            color: black;
+            display: inline-block;
+        }
+        .nav-links a:hover{          
+            transform: rotateX(10deg) scale(1.1);
+            color: blue;
+        }
+        header{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: darkgreen;
+            font-size: 15px;
+            height: 50px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        img{
+            width: 100%;
+            max-width: 600px;
+            max-height: 300px;
+            object-fit: contain;
+            height: auto;
+        }
+        #image-center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        #info{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5rem;
+            gap: 50px;
+        }
+        .section{
+            background-color: white;
+            position: relative;
+            z-index: 10;
+            padding: 20px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            width: 90%;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+        }
+        footer{
+            background-color: #070a12;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center; 
+        }
+        .section-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <title>Wyatt</title>
+</head>
+<body>
+    <header>
+        <h2 class="text">Quality Used Golf Balls. Great Prices. Kid Run.</h2>
+    </header>
+    <nav id="navbar">
+        <a href="#top" class="logo">Golf Balls</a>
+        <ul class="nav-links">
+            <li><a href="#top">Home</a></li>
+            <li><a href="balls.html">Balls</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="image-center">
+        <img src="image.png" alt="">
+    </div>
+    <section id="info">
+        <h2>✔Save Money</h2>
+        <h2>✔Recycled & Reused</h2>
+        <h2>✔Kid Owned & Operated</h2>
+    </section>
+    <br>
+    <div class="section-div">
+        <section id="about" class="section">
+            <h1>About Us</h1>
+            <h2>This business is 100% ran by kids.</h2>
+            <h2>All golf balls are recycled. NOT bought</h2>
+            <h2>The money goes to stocks and to my savings account to</h2> 
+            <h2>support my future</h2>
+        </section>
+    </div>
+    <br>
+    <div class="section-div">
+        <section id="buy" class="section">
+            <h1>Why buy?</h1>
+            <h2>Kid ran buisness.</h2>
+            <h2>All balls are recycled.</h2>
+            <h2>No waterloged balls.</h2>
+            <h2>Cheap Prices.</h2>
+            <h2>You support my future.</h2>
+        </section>
+    </div>
+    <br>
+    <div class="section-div">
+        <section id="delivery" class="section">
+            <h1>Delivery</h1>
+            <h2>Go to the balls page to order</h2>
+            <h2>When you order balls you give me your adress</h2>
+            <h2>the balls will be delivered as soon as I can</h2>
+            <h2>You will pay through venmo</h2>
+        </section>
+    </div>
+    <br>
+    <div class="section-div">
+        <section id="contact" class="section">
+            <h1>Contact Us</h1>
+            <h2>if you have any questions contact us <a href="mailto:"></a></h2>
+        </section>
+    </div>
+    <br>
+    <footer>
+        <h3 class="text">Golf Balls</h3>
+        <h3 class="text">high quality golf balls for a great price, delivered right to your door</h3>
+        <p class="text">&copy; 2026 Golf balls. All rights reserved.</p>
+    </footer>
+</body>
+</html>
